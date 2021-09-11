@@ -26,8 +26,8 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"sh", "-c", "/home/kali/.dwm/scripts/wallpaper_change.sh", NULL,   /* full path of the wallpaper script*/
-	"sh", "-c", "/home/kali/.dwm/scripts/status_bar.sh", NULL,         /*full path of the status bar script*/
+	"sh", "-c", "/opt/dwm/scripts/wallpaper_change.sh", NULL,   /* full path of the wallpaper script*/
+	"sh", "-c", "/opt/dwm/scripts/status_bar.sh", NULL,         /*full path of the status bar script*/
 	NULL /* terminate */
 };
 
