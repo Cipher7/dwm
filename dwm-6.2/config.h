@@ -26,8 +26,8 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"sh", "-c", "/opt/dwm/scripts/wallpaper_change.sh", NULL,   /* full path of the wallpaper script*/
-	"sh", "-c", "/opt/dwm/scripts/status_bar.sh", NULL,         /*full path of the status bar script*/
+	"sh", "-c", "/home/cipher/suckless-software/dwm/scripts/wallpaper_change.sh", NULL,   /* full path of the wallpaper script*/
+	"sh", "-c", "/home/cipher/suckless-software/dwm/scripts/status_bar.sh", NULL,         /*full path of the status bar script*/
 	NULL /* terminate */
 };
 
@@ -74,15 +74,17 @@ static const char *termcmd[]  = { "qterminal", NULL };
 static const char *browser[]  = { "firefox", NULL };
 static const char *dmenu_pentest[]  = { "/opt/dmenu_pentest/dmenu_pentest.sh", NULL };  /* full path of dmenu_pentest */
 static const char *file_manager[]  = { "thunar", NULL };
+static const char *flameshot[]  = { "flameshot gui", NULL };
 
 #include "movestack.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_space,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = browser } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = dmenu_pentest } },
 	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = file_manager } },
+	{ MODKEY,    		        XK_q,      spawn,          {.v = flameshot } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
