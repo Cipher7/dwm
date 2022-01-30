@@ -2,7 +2,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 11;        /* gaps between windows */
+static const unsigned int gappx     = 9;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -26,10 +26,11 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"sh", "-c", "/usr/src/dwm/scripts/wallpaper_change.sh", NULL,   /* full path of the wallpaper script*/
+	"sh", "-c", "/usr/src/dwm/scripts/wallpaper_set.sh", NULL,	/* full path of the wallpaper script*/
 	"sh", "-c", "/usr/src/dwm/scripts/status_bar.sh", NULL,         /*full path of the status bar script*/
-	"sh", "-c", "/usr/bin/flameshot > /dev/null 2>&1 &", NULL,                            /*starting flameshot*/
-     	"sh", "-c", "/usr/bin/xcompmgr &", NULL,                                              /*Starting xcompmgr*/
+	"sh", "-c", "/usr/bin/flameshot > /dev/null 2>&1 &", NULL,	/*starting flameshot*/
+	"sh", "-c", "/usr/bin/xcompmgr &", NULL,			/*Starting xcompmgr*/
+	"sh", "-c", "/usr/bin/conky &", NULL,				/*Starting conky*/
 	NULL /* terminate */
 };
 
