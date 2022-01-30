@@ -31,6 +31,7 @@ static const char *const autostart[] = {
 	"sh", "-c", "/usr/bin/flameshot > /dev/null 2>&1 &", NULL,	/*starting flameshot*/
 	"sh", "-c", "/usr/bin/xcompmgr &", NULL,			/*Starting xcompmgr*/
 	"sh", "-c", "/usr/bin/conky &", NULL,				/*Starting conky*/
+	"sh", "-c", "/usr/bin/VBoxClient-all", NULL,			/*Starting Virtualbox Extensions*/
 	NULL /* terminate */
 };
 
