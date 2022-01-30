@@ -26,8 +26,8 @@ static const char *colors[][3]      = {
 };
 
 static const char *const autostart[] = {
-	"sh", "-c", "/home/cipher/suckless-software/dwm/scripts/wallpaper_change.sh", NULL,   /* full path of the wallpaper script*/
-	"sh", "-c", "/home/cipher/suckless-software/dwm/scripts/status_bar.sh", NULL,         /*full path of the status bar script*/
+	"sh", "-c", "/usr/src/dwm/scripts/wallpaper_change.sh", NULL,   /* full path of the wallpaper script*/
+	"sh", "-c", "/usr/src/dwm/scripts/status_bar.sh", NULL,         /*full path of the status bar script*/
 	"sh", "-c", "/usr/bin/flameshot > /dev/null 2>&1 &", NULL,                            /*starting flameshot*/
      	"sh", "-c", "/usr/bin/xcompmgr &", NULL,                                              /*Starting xcompmgr*/
 	NULL /* terminate */
