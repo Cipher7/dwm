@@ -77,7 +77,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *browser[]  = { "firefox", NULL };
-static const char *dmenu_pentest[]  = { "/bin/bash /opt/dmenu_pentest/dmenu_pentest.sh", NULL };  /* full path of dmenu_pentest */
+static const char *dmenu_pentest[]  = { "/opt/dmenu_pentest/dmenu_pentest.sh", NULL };  /* full path of dmenu_pentest */
 static const char *file_manager[]  = { "thunar", NULL };
 static const char *flameshot[]  = { "flameshot", "gui", NULL };
 
