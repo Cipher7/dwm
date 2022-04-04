@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
 wallpaper_path="/usr/src/dwm/Wallpapers"
-file=skeleton.jpg
+file=arch-symbol.jpg
 
 hsetroot -cover $wallpaper_path/$file
