@@ -32,6 +32,7 @@ static const char *const autostart[] = {
 	"sh", "-c", "/usr/bin/xcompmgr &", NULL,			/*Starting xcompmgr*/
 	"sh", "-c", "/usr/bin/conky &", NULL,				/*Starting conky*/
 	"sh", "-c", "/usr/bin/VBoxClient-all", NULL,			/*Starting Virtualbox Extensions*/
+	"sh", "-c", "/usr/bin/vmware-user", NULL,			/*Enabling copy-paste in vmtools*/
 	NULL /* terminate */
 };
 
